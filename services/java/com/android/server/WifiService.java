@@ -488,8 +488,7 @@ public class WifiService extends IWifiManager.Stub {
                 mWifiState.set(WIFI_ENABLED);
             }
         } else {
-            if (airplane && mWifiState.get() != WIFI_ENABLED_AIRPLANE_OVERRIDE) {
-                // In this state, Wi-Fi will be re-enabled after airplane mode is off
+            if (airplane) {
                 mWifiState.set(WIFI_DISABLED_AIRPLANE_ON);
             } else {
                 mWifiState.set(WIFI_DISABLED);
