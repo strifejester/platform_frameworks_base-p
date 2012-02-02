@@ -369,7 +369,7 @@ status_t MatroskaSource::readBlock() {
     const mkvparser::Block *block = mBlockIter.block();
 
     int64_t timeUs = mBlockIter.blockTimeUs();
-    int frameCount = block->GetFrameCount():
+    int frameCount = block->GetFrameCount();
 
     for (int i = 0; i < frameCount; ++i) {
         const mkvparser::Block::Frame &frame = block->GetFrame(i);
