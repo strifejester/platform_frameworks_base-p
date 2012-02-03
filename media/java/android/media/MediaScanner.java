@@ -475,7 +475,7 @@ public class MediaScanner
                 key = path.toLowerCase();
             }
             FileCacheEntry entry = mFileCache.get(key);
-            if (nomedia) {
+            if (noMedia) {
                 // In case the file is known and now is under a
                 // .nomedia folder mark as not seen in order to
                 // be removed from files table in the post scan.
